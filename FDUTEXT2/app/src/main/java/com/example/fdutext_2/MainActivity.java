@@ -119,7 +119,7 @@ class SearchAdapter extends RecyclerView.Adapter<TextViewHolder> implements Filt
     }
 
     public void notifyItems(@NonNull List<String> items){
-        this.mItems = mItems;
+        this.mItems = items;
         this.filterItems.clear();
         this.filterItems.addAll(items);
         notifyDataSetChanged();
